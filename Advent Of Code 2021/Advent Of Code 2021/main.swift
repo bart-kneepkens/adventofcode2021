@@ -7,5 +7,5 @@
 
 import Foundation
 
-print(Day1.part2Result)
+print(Day2.finalPositionProduct2)
 

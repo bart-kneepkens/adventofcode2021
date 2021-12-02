@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CCFEE9602757974900F4F086 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEE95F2757974900F4F086 /* main.swift */; };
 		CCFEE9672757979000F4F086 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEE9662757979000F4F086 /* Day1.swift */; };
+		CCFEE9692758A9C400F4F086 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEE9682758A9C400F4F086 /* Day2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		CCFEE95C2757974900F4F086 /* Advent Of Code 2021 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent Of Code 2021"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFEE95F2757974900F4F086 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CCFEE9662757979000F4F086 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		CCFEE9682758A9C400F4F086 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				CCFEE95F2757974900F4F086 /* main.swift */,
 				CCFEE9662757979000F4F086 /* Day1.swift */,
+				CCFEE9682758A9C400F4F086 /* Day2.swift */,
 			);
 			path = "Advent Of Code 2021";
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCFEE9672757979000F4F086 /* Day1.swift in Sources */,
+				CCFEE9692758A9C400F4F086 /* Day2.swift in Sources */,
 				CCFEE9602757974900F4F086 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
