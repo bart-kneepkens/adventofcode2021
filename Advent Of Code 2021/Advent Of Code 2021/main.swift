@@ -7,5 +7,4 @@
 
 import Foundation
 
-print(Day2.finalPositionProduct2)
-
+print(Day4.lastBoardToWinScore)
