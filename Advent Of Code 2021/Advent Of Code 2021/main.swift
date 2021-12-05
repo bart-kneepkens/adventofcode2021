@@ -7,4 +7,5 @@
 
 import Foundation
 
-print(Day4.lastBoardToWinScore)
+print(Day5.amountOfDangerousAreas == 5698)
+print(Day5.amountOfDangerousAreasIncludingDiagonals == 15463)
