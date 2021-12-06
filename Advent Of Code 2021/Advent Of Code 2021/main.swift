@@ -7,5 +7,4 @@
 
 import Foundation
 
-print(Day5.amountOfDangerousAreas == 5698)
-print(Day5.amountOfDangerousAreasIncludingDiagonals == 15463)
+print(Day6.amountOfLanternFishAfter80Days)
