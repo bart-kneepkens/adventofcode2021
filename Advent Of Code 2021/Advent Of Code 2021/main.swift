@@ -7,4 +7,4 @@
 
 import Foundation
 
-print(Day6.amountOfLanternFishAfter80Days)
+print(Day7.amountOfFuelToAlignPart2)
