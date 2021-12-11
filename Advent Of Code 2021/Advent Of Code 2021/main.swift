@@ -7,4 +7,5 @@
 
 import Foundation
 
-print(Day8.part1)
+print(Day9.part1 == 516)
+print(Day9.part2 == 1023660)
