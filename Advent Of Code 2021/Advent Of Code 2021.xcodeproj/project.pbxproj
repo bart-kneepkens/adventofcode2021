@@ -12,6 +12,7 @@
 		CC40A308275E1D4800B4C8EA /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A307275E1D4800B4C8EA /* Day6.swift */; };
 		CC81A5C62761EACC00D1A6E4 /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81A5C52761EACC00D1A6E4 /* Day8.swift */; };
 		CC81A5CA2764E89100D1A6E4 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81A5C92764E89100D1A6E4 /* Day9.swift */; };
+		CC81A5CC27654AFB00D1A6E4 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81A5CB27654AFB00D1A6E4 /* Day10.swift */; };
 		CC8D24CE275AAE65002287B2 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8D24CD275AAE65002287B2 /* Day3.swift */; };
 		CCE08472275F56FD00E04174 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE08471275F56FD00E04174 /* Day7.swift */; };
 		CCFEE9602757974900F4F086 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEE95F2757974900F4F086 /* main.swift */; };
@@ -37,6 +38,7 @@
 		CC40A307275E1D4800B4C8EA /* Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
 		CC81A5C52761EACC00D1A6E4 /* Day8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day8.swift; sourceTree = "<group>"; };
 		CC81A5C92764E89100D1A6E4 /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
+		CC81A5CB27654AFB00D1A6E4 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		CC8D24CD275AAE65002287B2 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
 		CCE08471275F56FD00E04174 /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 		CCFEE95C2757974900F4F086 /* Advent Of Code 2021 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent Of Code 2021"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 				CCE08471275F56FD00E04174 /* Day7.swift */,
 				CC81A5C52761EACC00D1A6E4 /* Day8.swift */,
 				CC81A5C92764E89100D1A6E4 /* Day9.swift */,
+				CC81A5CB27654AFB00D1A6E4 /* Day10.swift */,
 			);
 			path = "Advent Of Code 2021";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				CC8D24CE275AAE65002287B2 /* Day3.swift in Sources */,
 				CC40A306275D2FD000B4C8EA /* Day5.swift in Sources */,
 				CC81A5CA2764E89100D1A6E4 /* Day9.swift in Sources */,
+				CC81A5CC27654AFB00D1A6E4 /* Day10.swift in Sources */,
 				CC40A308275E1D4800B4C8EA /* Day6.swift in Sources */,
 				CC81A5C62761EACC00D1A6E4 /* Day8.swift in Sources */,
 				CCFEE9602757974900F4F086 /* main.swift in Sources */,
