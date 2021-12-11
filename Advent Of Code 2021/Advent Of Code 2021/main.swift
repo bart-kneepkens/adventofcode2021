@@ -7,4 +7,4 @@
 
 import Foundation
 
-print(Day7.amountOfFuelToAlignPart2)
+print(Day8.part1)
