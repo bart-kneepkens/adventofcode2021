@@ -7,6 +7,6 @@
 
 import Foundation
 
-print(Day11.part1 == 1723)
-print(Day11.part2 == 327)
+print(Day12.part1 == 3463)
+print(Day12.part2 == 91533)
 
