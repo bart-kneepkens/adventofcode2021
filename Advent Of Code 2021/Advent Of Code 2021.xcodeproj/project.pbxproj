@@ -14,6 +14,7 @@
 		CC81A5CA2764E89100D1A6E4 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81A5C92764E89100D1A6E4 /* Day9.swift */; };
 		CC81A5CC27654AFB00D1A6E4 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81A5CB27654AFB00D1A6E4 /* Day10.swift */; };
 		CC8D24CE275AAE65002287B2 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8D24CD275AAE65002287B2 /* Day3.swift */; };
+		CC9A857A276607EA00CCE0A3 /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A8579276607EA00CCE0A3 /* Day11.swift */; };
 		CCE08472275F56FD00E04174 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE08471275F56FD00E04174 /* Day7.swift */; };
 		CCFEE9602757974900F4F086 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEE95F2757974900F4F086 /* main.swift */; };
 		CCFEE9672757979000F4F086 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEE9662757979000F4F086 /* Day1.swift */; };
@@ -40,6 +41,7 @@
 		CC81A5C92764E89100D1A6E4 /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
 		CC81A5CB27654AFB00D1A6E4 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		CC8D24CD275AAE65002287B2 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
+		CC9A8579276607EA00CCE0A3 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		CCE08471275F56FD00E04174 /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 		CCFEE95C2757974900F4F086 /* Advent Of Code 2021 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent Of Code 2021"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFEE95F2757974900F4F086 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				CC81A5C52761EACC00D1A6E4 /* Day8.swift */,
 				CC81A5C92764E89100D1A6E4 /* Day9.swift */,
 				CC81A5CB27654AFB00D1A6E4 /* Day10.swift */,
+				CC9A8579276607EA00CCE0A3 /* Day11.swift */,
 			);
 			path = "Advent Of Code 2021";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			files = (
 				CCFEE9672757979000F4F086 /* Day1.swift in Sources */,
 				CC40A2FF275B78DE00B4C8EA /* Day4.swift in Sources */,
+				CC9A857A276607EA00CCE0A3 /* Day11.swift in Sources */,
 				CCE08472275F56FD00E04174 /* Day7.swift in Sources */,
 				CCFEE9692758A9C400F4F086 /* Day2.swift in Sources */,
 				CC8D24CE275AAE65002287B2 /* Day3.swift in Sources */,
