@@ -21,17 +21,15 @@ struct Day12 {
             adjacents[kvp.1, default: []].append(kvp.0)
         }
         
-        func findAllPaths() -> Set<[String]> {
+        func findPathCount() -> Int {
             var visited: Set<String> = Set()
             var currentPath: [String] = ["start"]
-            var paths: Set<[String]> = Set()
-            
-            dfs(from: "start", to: "end", isVisited: &visited, path: &currentPath)
+            var count = 0
             
             func dfs(from: String, to: String, isVisited: inout Set<String>, path: inout [String]) {
                 
                 if from == to {
-                    paths.insert(path)
+                    count += 1
                     return
                 }
                 
@@ -51,13 +49,14 @@ struct Day12 {
                 })
                 
                 isVisited.remove(from)
-                
             }
             
-            return paths
+            dfs(from: "start", to: "end", isVisited: &visited, path: &currentPath)
+            
+            return count
         }
         
-        return findAllPaths().count
+        return findPathCount()
     }
     
     static var part2: Int {
@@ -73,13 +72,12 @@ struct Day12 {
             adjacents[kvp.1, default: []].append(kvp.0)
         }
         
-        func findAllPaths() -> Set<[String]> {
-            var paths: Set<[String]> = Set()
+        func findPathCount() -> Int {
+            var count = 0
             
             func dfs(from: String, to: String, path: [String], didTwice: Bool, isVisited: [String: Int] = [:]) {
-                
                 if from == to {
-                    paths.insert(path)
+                    count += 1
                     return
                 }
                 
@@ -106,10 +104,10 @@ struct Day12 {
             
             dfs(from: "start", to: "end", path: ["start"], didTwice: false)
             
-            return paths
+            return count
         }
         
-        return findAllPaths().count
+        return findPathCount()
     }
 }
 

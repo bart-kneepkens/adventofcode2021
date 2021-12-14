@@ -37,10 +37,11 @@ struct Day7 {
     }
     
     static func totalDistanceToPoint(crabs: [Int], to: Int) -> Int {
-        crabs
-            .map({ abs($0 - to)}) // Create 'range' Int
+        let costs = crabs
+            .map({ abs($0 - to) }) // Create 'range' Int
             .map({ $0 * ($0 + 1) / 2 }) // Calculate increasing costs
-            .reduce(0, +) // ...
+            
+        return costs.reduce(0, +) // ...
     }
 }
 

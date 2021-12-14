@@ -20,7 +20,7 @@ struct Day5 {
         return Coordinate(x: Int(components[0])!, y: Int(components[1])!)
     }
     
-    static let vents: [Vent] = input.components(separatedBy: .newlines).map { line in
+    static let allVents: [Vent] = input.components(separatedBy: .newlines).map { line in
         let components = line.components(separatedBy: " -> ")
         
         let begin = coordinate(from: components[0])
@@ -31,7 +31,7 @@ struct Day5 {
     
     // MARK: - Part 1
     static var amountOfDangerousAreas: Int {
-        let vents = vents.filter { vent in
+        let vents = allVents.filter { vent in
             return vent.begin.x == vent.end.x || vent.begin.y == vent.end.y
         }
         
@@ -64,7 +64,7 @@ struct Day5 {
     static var amountOfDangerousAreasIncludingDiagonals: Int {
         var intersections: [Coordinate: Int] = [:]
         
-        for vent in vents {
+        for vent in allVents {
             let isHorizontal = vent.begin.y == vent.end.y
             let isVertical = vent.begin.x == vent.end.x
             

@@ -46,7 +46,7 @@ struct Day11 {
     /// Returns coordinates that are affected by flashing the coordinates that are passed.
     /// In other words, its neighbors.
     /// Returns a dictionary where the coordinate is key, and the value is the amount of 'flashing' neighbors it has.
-    static func affectedCoordinates(from flashing: Set<Coordinate>) -> [Coordinate: Int] {
+    static func findAffectedCoordinates(from flashing: Set<Coordinate>) -> [Coordinate: Int] {
         flashing
             .flatMap(\.neighbors)
             .filter({ !flashing.contains($0) })
@@ -79,7 +79,7 @@ struct Day11 {
         var coordinatesThatShouldFlash = findCoordinatesThatShouldFlash(in: new)
         
         while !coordinatesThatShouldFlash.isEmpty {
-            let affectedCoordinates = affectedCoordinates(from: coordinatesThatShouldFlash)
+            let affectedCoordinates = findAffectedCoordinates(from: coordinatesThatShouldFlash)
             
             coordinatesThatShouldFlash.forEach { coordinate in
                 new[coordinate.y][coordinate.x] = 0

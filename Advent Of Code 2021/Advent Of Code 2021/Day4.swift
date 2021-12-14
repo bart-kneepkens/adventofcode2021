@@ -14,7 +14,7 @@ struct Day4 {
     static var finalScore: Int {
         var calledNumbers: Set<Int> = Set([])
         
-        let boards = boards
+        let boards = allBoards
         
         for number in drawNumbers {
             calledNumbers.insert(number)
@@ -43,7 +43,7 @@ struct Day4 {
         for number in drawNumbers {
             calledNumbers.insert(number)
             
-            for board in boards.filter({ !winners.contains($0) }) {
+            for board in allBoards.filter({ !winners.contains($0) }) {
                 let boardWon = winningRowOrColumn(board: board, calledNumbers: calledNumbers)
                 
                 if boardWon {
@@ -102,7 +102,7 @@ struct Day4 {
     
     static private let drawNumbers: [Int] = input.components(separatedBy: .newlines)[0].components(separatedBy: ",").map({ Int($0)! })
     
-    static private let boards: [Board] =  {
+    static private let allBoards: [Board] =  {
         let lines = input
         .components(separatedBy: "\n")
         .dropFirst(2)
