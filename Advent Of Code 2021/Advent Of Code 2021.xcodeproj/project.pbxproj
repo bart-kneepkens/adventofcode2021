@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE808BEE276945E500FE59F1 /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BED276945E500FE59F1 /* Day13.swift */; };
 		CC40A2FF275B78DE00B4C8EA /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A2FE275B78DE00B4C8EA /* Day4.swift */; };
 		CC40A306275D2FD000B4C8EA /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A305275D2FD000B4C8EA /* Day5.swift */; };
 		CC40A308275E1D4800B4C8EA /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A307275E1D4800B4C8EA /* Day6.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE808BED276945E500FE59F1 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		CC40A2FE275B78DE00B4C8EA /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		CC40A305275D2FD000B4C8EA /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 		CC40A307275E1D4800B4C8EA /* Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				CC81A5CB27654AFB00D1A6E4 /* Day10.swift */,
 				CC9A8579276607EA00CCE0A3 /* Day11.swift */,
 				CC9A857B2767DDE500CCE0A3 /* Day12.swift */,
+				AE808BED276945E500FE59F1 /* Day13.swift */,
 			);
 			path = "Advent Of Code 2021";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				CCFEE9672757979000F4F086 /* Day1.swift in Sources */,
 				CC40A2FF275B78DE00B4C8EA /* Day4.swift in Sources */,
+				AE808BEE276945E500FE59F1 /* Day13.swift in Sources */,
 				CC9A857A276607EA00CCE0A3 /* Day11.swift in Sources */,
 				CCE08472275F56FD00E04174 /* Day7.swift in Sources */,
 				CCFEE9692758A9C400F4F086 /* Day2.swift in Sources */,
