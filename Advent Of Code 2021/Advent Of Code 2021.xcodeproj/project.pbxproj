@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE808BEE276945E500FE59F1 /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BED276945E500FE59F1 /* Day13.swift */; };
+		AE808BF1276A615F00FE59F1 /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BF0276A615F00FE59F1 /* Day14.swift */; };
 		CC40A2FF275B78DE00B4C8EA /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A2FE275B78DE00B4C8EA /* Day4.swift */; };
 		CC40A306275D2FD000B4C8EA /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A305275D2FD000B4C8EA /* Day5.swift */; };
 		CC40A308275E1D4800B4C8EA /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A307275E1D4800B4C8EA /* Day6.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		AE808BED276945E500FE59F1 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
+		AE808BF0276A615F00FE59F1 /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		CC40A2FE275B78DE00B4C8EA /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		CC40A305275D2FD000B4C8EA /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 		CC40A307275E1D4800B4C8EA /* Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				CC9A8579276607EA00CCE0A3 /* Day11.swift */,
 				CC9A857B2767DDE500CCE0A3 /* Day12.swift */,
 				AE808BED276945E500FE59F1 /* Day13.swift */,
+				AE808BF0276A615F00FE59F1 /* Day14.swift */,
 			);
 			path = "Advent Of Code 2021";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				CC40A308275E1D4800B4C8EA /* Day6.swift in Sources */,
 				CC81A5C62761EACC00D1A6E4 /* Day8.swift in Sources */,
 				CCFEE9602757974900F4F086 /* main.swift in Sources */,
+				AE808BF1276A615F00FE59F1 /* Day14.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
