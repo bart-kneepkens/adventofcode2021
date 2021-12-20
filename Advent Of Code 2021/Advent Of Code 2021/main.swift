@@ -7,5 +7,5 @@
 
 import Foundation
 
-print(Day14.part2)
+print(Day15.part1)
 

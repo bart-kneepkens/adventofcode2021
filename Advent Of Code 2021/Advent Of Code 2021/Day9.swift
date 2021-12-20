@@ -7,27 +7,6 @@
 
 import Foundation
 
-struct Coordinate: Hashable {
-    let x: Int
-    let y: Int
-    
-    var leftNeighbor: Coordinate {
-        Coordinate(x: x - 1, y: y)
-    }
-    
-    var rightNeighbor: Coordinate {
-        Coordinate(x: x + 1, y: y)
-    }
-    
-    var bottomNeighbor: Coordinate {
-        Coordinate(x: x, y: y - 1)
-    }
-    
-    var topNeighbor: Coordinate {
-        Coordinate(x: x, y: y + 1)
-    }
-}
-
 struct Day9 {
     
     static let grid = input
