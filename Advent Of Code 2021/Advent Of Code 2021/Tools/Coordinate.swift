@@ -11,6 +11,16 @@ struct Coordinate: Hashable, CustomStringConvertible {
     let x: Int
     let y: Int
     
+    var description: String {
+        "\(x),\(y)"
+    }
+    
+    func fits(in size: Int) -> Bool {
+        x >= 0 && x < size && y >= 0 && y < size
+    }
+}
+
+extension Coordinate {
     var leftNeighbor: Coordinate {
         Coordinate(x: x - 1, y: y)
     }
@@ -27,7 +37,27 @@ struct Coordinate: Hashable, CustomStringConvertible {
         Coordinate(x: x, y: y + 1)
     }
     
-    var description: String {
-        "\(x),\(y)"
+    var nearestNeighbors: Set<Coordinate> {
+        Set([leftNeighbor, rightNeighbor, bottomNeighbor, topNeighbor])
+    }
+    
+    var topLeftNeighbor: Coordinate {
+        Coordinate(x: x - 1, y: y + 1)
+    }
+    
+    var topRightNeighbor: Coordinate {
+        Coordinate(x: x + 1, y: y + 1)
+    }
+    
+    var bottomLeftNeighbor: Coordinate {
+        Coordinate(x: x - 1, y: y - 1)
+    }
+    
+    var bottomRightNeighbor: Coordinate {
+        Coordinate(x: x + 1, y: y - 1)
+    }
+    
+    var neighbors: [Coordinate] {
+        [leftNeighbor, topLeftNeighbor, topNeighbor, topRightNeighbor, rightNeighbor, bottomRightNeighbor, bottomNeighbor, bottomLeftNeighbor]
     }
 }

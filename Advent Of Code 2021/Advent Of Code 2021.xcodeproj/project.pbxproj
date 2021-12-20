@@ -11,7 +11,7 @@
 		AE808BF1276A615F00FE59F1 /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BF0276A615F00FE59F1 /* Day14.swift */; };
 		AE808BF4276BE90200FE59F1 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BF3276BE90200FE59F1 /* Day15.swift */; };
 		AE808BFA2770F6D000FE59F1 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BF92770F6D000FE59F1 /* Coordinate.swift */; };
-		AE808BFD2771098B00FE59F1 /* MinPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BFC2771098B00FE59F1 /* MinPriorityQueue.swift */; };
+		AE808BFD2771098B00FE59F1 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE808BFC2771098B00FE59F1 /* Heap.swift */; };
 		CC40A2FF275B78DE00B4C8EA /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A2FE275B78DE00B4C8EA /* Day4.swift */; };
 		CC40A306275D2FD000B4C8EA /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A305275D2FD000B4C8EA /* Day5.swift */; };
 		CC40A308275E1D4800B4C8EA /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40A307275E1D4800B4C8EA /* Day6.swift */; };
@@ -44,7 +44,7 @@
 		AE808BF0276A615F00FE59F1 /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		AE808BF3276BE90200FE59F1 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		AE808BF92770F6D000FE59F1 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
-		AE808BFC2771098B00FE59F1 /* MinPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinPriorityQueue.swift; sourceTree = "<group>"; };
+		AE808BFC2771098B00FE59F1 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		CC40A2FE275B78DE00B4C8EA /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		CC40A305275D2FD000B4C8EA /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 		CC40A307275E1D4800B4C8EA /* Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				AE808BF92770F6D000FE59F1 /* Coordinate.swift */,
-				AE808BFC2771098B00FE59F1 /* MinPriorityQueue.swift */,
+				AE808BFC2771098B00FE59F1 /* Heap.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE808BFD2771098B00FE59F1 /* MinPriorityQueue.swift in Sources */,
+				AE808BFD2771098B00FE59F1 /* Heap.swift in Sources */,
 				CCFEE9672757979000F4F086 /* Day1.swift in Sources */,
 				CC40A2FF275B78DE00B4C8EA /* Day4.swift in Sources */,
 				AE808BEE276945E500FE59F1 /* Day13.swift in Sources */,

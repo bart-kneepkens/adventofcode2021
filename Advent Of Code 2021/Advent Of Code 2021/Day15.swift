@@ -10,65 +10,97 @@ import Foundation
 struct Day15 {
     static let input = fullInput
     
-    static var part1: Int {
-        
-        let gridSize = input.components(separatedBy: .newlines).first!.count
-        
-        let costs = input.components(separatedBy: .newlines).map({ $0.compactMap({ Int(String($0)) }) })
-        
-        var graph: [String: [(id: String, weight: Int)]] = [:]
-        
-        let priorityQueue = MinPriorityQueue<String>()
-        
-        // Fill `graph`
-        for y in 0..<gridSize {
-            for x in 0..<gridSize {
-                let current = Coordinate(x: x, y: y)
-                let right = current.rightNeighbor
-                let bottom = current.topNeighbor
-                
-                if right.x < gridSize {
-                    graph[current.description, default: []].append((right.description, costs[right.y][right.x]))
-                }
-                
-                if bottom.y < gridSize {
-                    graph[current.description, default: []].append((bottom.description, costs[bottom.y][bottom.x]))
-                }
-
-                if current.x == gridSize - 1 && current.y == gridSize - 1 {
-                    graph[current.description] = []
-                }
-            }
-        }
+    static let gridSize = input.components(separatedBy: .newlines).first!.count
     
-        func shortestDijkstra(from root: String, to end: String) -> Int {
-            var pathWeight = [String: Int]()
+    static let costs = input.components(separatedBy: .newlines).map({ $0.compactMap({ Int(String($0)) }) })
+    
+    static func findLeastRiskyPath(gridSizeMultiplier: Int = 1) -> Int {
+        let amplifiedGridSize = gridSize * gridSizeMultiplier
+        
+        func weight(for coordinate: Coordinate) -> Int {
+            let x = coordinate.x
+            let y = coordinate.y
             
-            for node in graph.keys {
-                let value = node == root ? 0 : Int.max
-                pathWeight[node] = value
-                priorityQueue.insert(item: node, priority: value)
+            var addX = 0
+            var addY = 0
+            var trueX = x
+            var trueY = y
+            
+            if x >= gridSize {
+                let remainder = x % gridSize
+                let multiplier = (x-remainder) / gridSize
+                addX = multiplier
+                trueX = remainder
             }
             
-            var previous = [String: String]()
+            if y >= gridSize {
+                let remainder = y % gridSize
+                let multiplier = (y-remainder) / gridSize
+                addY = multiplier
+                trueY = remainder
+            }
             
-            while let next = priorityQueue.take() {
-                for adjacent in graph[next]! {
-                    let proposal = pathWeight[next]! + adjacent.weight
+            let originalValue = costs[trueY][trueX]
+            var proposal = originalValue + addX + addY
+            
+            if proposal > 9 {
+                proposal = proposal % 9
+            }
+            
+            return proposal
+        }
+        
+        // Precompute the weights (risks) in extended grid
+        var weights: [[Int]] = [[Int]](repeating: [Int](repeating: 0, count: amplifiedGridSize), count: amplifiedGridSize)
+        
+        func shortestDijkstra(from root: Coordinate = Coordinate(x: 0, y: 0), to end: Coordinate) -> Int {
+            var pathWeight = [Coordinate: Int]()
+            
+            var priorityQueue = Heap<Coordinate> { (lhs, rhs) -> Bool in
+                pathWeight[lhs]! < pathWeight[rhs]!
+            }
+            
+            for y in 0..<amplifiedGridSize {
+                for x in 0..<amplifiedGridSize {
+                    let coordinate = Coordinate(x: x, y: y)
+                    weights[y][x] = weight(for: coordinate)
                     
-                    if proposal < pathWeight[adjacent.id]! {
-                        pathWeight[adjacent.id] = proposal
-                        previous[adjacent.id] = next
-                        priorityQueue.updateKey(item: adjacent.id, to: proposal)
+                    let value = coordinate == root ? 0 : Int.max
+                    pathWeight[coordinate] = value
+                }
+            }
+            
+            var visited = Set<Coordinate>()
+            
+            priorityQueue.insert(root)
+            
+            while let next = priorityQueue.remove() {
+                let adjacents = next.nearestNeighbors.filter({ $0.fits(in: amplifiedGridSize )})
+                
+                for adjacent in adjacents {
+                    let proposal = pathWeight[next]! + weights[adjacent.y][adjacent.x]
+                    
+                    if proposal < pathWeight[adjacent]! && !visited.contains(adjacent) {
+                        pathWeight[adjacent] = proposal
+                        priorityQueue.insert(adjacent)
                     }
                 }
+                
+                visited.insert(next)
             }
             
             return pathWeight[end]!
         }
         
-        
-        return shortestDijkstra(from: "0,0", to: "99,99")
+        return shortestDijkstra(to: Coordinate(x: amplifiedGridSize - 1, y: amplifiedGridSize - 1))
+    }
+    
+    static var part1: Int {
+        findLeastRiskyPath()
+    }
+    
+    static var part2: Int {
+        findLeastRiskyPath(gridSizeMultiplier: 5)
     }
 }
 

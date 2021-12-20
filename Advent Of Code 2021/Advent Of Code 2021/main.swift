@@ -8,4 +8,5 @@
 import Foundation
 
 print(Day15.part1)
+print(Day15.part2)
 

@@ -7,28 +7,6 @@
 
 import Foundation
 
-extension Coordinate {
-    var topLeftNeighbor: Coordinate {
-        Coordinate(x: x - 1, y: y + 1)
-    }
-    
-    var topRightNeighbor: Coordinate {
-        Coordinate(x: x + 1, y: y + 1)
-    }
-    
-    var bottomLeftNeighbor: Coordinate {
-        Coordinate(x: x - 1, y: y - 1)
-    }
-    
-    var bottomRightNeighbor: Coordinate {
-        Coordinate(x: x + 1, y: y - 1)
-    }
-    
-    var neighbors: [Coordinate] {
-        [leftNeighbor, topLeftNeighbor, topNeighbor, topRightNeighbor, rightNeighbor, bottomRightNeighbor, bottomNeighbor, bottomLeftNeighbor]
-    }
-}
-
 struct Day11 {
     
     static private var grid: [[Int]] = input
